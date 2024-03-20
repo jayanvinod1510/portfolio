@@ -1,5 +1,7 @@
 .App {
+  min-height: 100vh;
   text-align: center;
+  background-image: linear-gradient(to right, #131015 , #161132, #1E1533 , #161132, #131015);
 }
 
 .App-logo {
@@ -13,15 +15,74 @@
   }
 }
 
+
+/* .montserrat-Extralight{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.montserrat-light{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+} */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  align-items: start;
+  justify-content: end;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #BEBEBE;
+}
+
+.App-header-options {
+  display: flex;
+  width : 50%;
+  flex-direction: row;
+  align-items: start;
+  font-family: "Montserrat"; 
+  font-weight: 600;
+  justify-content: end;
+  font-size: 18px;
+  color: #BEBEBE;
+}
+
+.resume-button {
+  padding: 12px 55px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: "Montserrat";
+  border: 1px solid #0BBD69;
+  color: #0BBD69;
+  background-color: transparent;
+
+}
+
+.resume-button:hover {
+  padding: 12px 55px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  border: 1px solid #0BBD69;
+  color: #ffffff;
+  background-color: #0BBD69;
+
+}
+
+.App-header-name {
+  display: flex;
+  width : 50%;
+  flex-direction: row;
+  align-items: start;
+  font-family: "Montserrat"; 
+  font-weight: 400;
+  justify-content: start;
+  font-size: 20px;
+  color: #BEBEBE;
 }
 
 .App-link {
