@@ -34,6 +34,7 @@
   flex-direction: row;
   align-items: start;
   justify-content: end;
+  overflow: hidden;
   font-size: calc(10px + 2vmin);
   color: #BEBEBE;
 }
@@ -50,6 +51,10 @@
   color: #BEBEBE;
 }
 
+.App-header-options .icon {
+  display: none;
+}
+
 .resume-button {
   padding: 12px 55px;
   border-radius: 10px;
@@ -61,9 +66,35 @@
 
 }
 
+.menu-button {
+  padding: 10px 10px 3px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: "Montserrat";
+  border: 1px solid #0BBD69;
+  color: #0BBD69;
+  background-color: transparent;
+
+}
+
+.menu-button:hover {
+  padding: 10px 10px 3px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  border: 1px solid #0BBD69;
+  color: #ffffff;
+  background-color: #0BBD69;
+
+}
+
 .resume-button:hover {
   padding: 12px 55px;
   border-radius: 10px;
+  cursor: pointer;
   font-size: 15px;
   font-family: "Montserrat";
   font-weight: 700;
@@ -87,6 +118,52 @@
 
 .App-link {
   color: #61dafb;
+}
+
+@media screen and (max-width: 600px) {
+  .App-header-options p {display: none;}
+  .App-header-options div {display: none;}
+  .App-header-options div.icon {
+    float: right;
+    display: block;
+    margin-top:25px !important;
+  }
+  .App-header-name p {
+    margin-top: 40px !important;
+  }
+  .App-header-options{
+    padding-bottom: 13px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .App-header-options.responsive {position: relative;}
+  /* .App-header-options.responsive div.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  } */
+  .App-header-options.responsive div {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .App-header-name.responsive {
+    visibility: hidden
+  }
+  .App-header-options.responsive {
+    flex-direction: column;
+    position:absolute;
+    align-items: center;
+    backdrop-filter: blur(6px);
+    width : 100%;
+    padding-right: 0px !important;
+  }
+  .App-header-options.responsive p {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 @keyframes App-logo-spin {
